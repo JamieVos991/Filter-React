@@ -28,7 +28,7 @@
 }
 
 .filterBarInputWrapper > label {
-    background: blue;
+    background: hsl(194, 16%, 38%);
     font-size: 1.7rem;
     width: 11rem;
     height: 3.5rem;
@@ -40,5 +40,5 @@
 }
 
 .filterBarInputWrapper > input:checked + label {
-    background: green;
+    background: hsl(194, 16%, 28%);;
 }
