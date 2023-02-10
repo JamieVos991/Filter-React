@@ -1,8 +1,7 @@
-import items from "../Data/Items";
-
 let iterator = 1;
-    let classToBeAdded = "";
-    let toBeRenderedFigures = items.bacardi.map(bacardi => {
+let classToBeAdded = "";
+function getToBeRenderedFigures(drinks){
+    let drinksToBeRendered = drinks.map(drink => {
         switch(iterator){
             case 1:
                 classToBeAdded += "galleryCard__figure galleryCard__figure--big";
@@ -18,11 +17,15 @@ let iterator = 1;
                 break;
         }
         iterator += 1;
+
         return (
             <figure className={classToBeAdded}>
-                <img className="galleryCard__img" src={bacardi.image} alt={bacardi.alt}></img>
+                <img className="galleryCard__img" src={drink.image} alt={drink.alt}></img>
             </figure>
-        )
-    })
+            )
+        });
+        iterator = 1;
+        return drinksToBeRendered;
+    }
 
-    export default toBeRenderedFigures;
+    export default getToBeRenderedFigures;

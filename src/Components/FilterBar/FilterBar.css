@@ -1,0 +1,44 @@
+.filterBar {
+    width: 100vw;
+    height: min(12rem, 12vh);
+    background: #A2B5BB;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filterBarWrapper {
+    width: 60vw;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filterBarInputWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.filterBarInputWrapper > input  {
+    appearance: none;
+}
+
+.filterBarInputWrapper > label {
+    background: blue;
+    font-size: 1.7rem;
+    width: 11rem;
+    height: 3.5rem;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filterBarInputWrapper > input:checked + label {
+    background: green;
+}

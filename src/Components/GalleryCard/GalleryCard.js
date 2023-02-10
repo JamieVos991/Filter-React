@@ -1,13 +1,12 @@
 import "./GalleryCard.css";
-import toBeRenderedFigures from "../../Helper/GalleryCardHelper";
+import getToBerenderedFigures from "../../Helper/GalleryCardHelper";
 
-function GalleryCard() {
-
+const GalleryCard = (props) => {
     return (
         <article className="galleryCard">
-            {toBeRenderedFigures}
+            {getToBerenderedFigures(props.items)}
         </article>
-    )
+    );
 }
 
-export default GalleryCard
+export default GalleryCard;

@@ -1,9 +1,23 @@
-import './App.css';
-import GalleryCard from './Components/GalleryCard/GalleryCard';
+import { useState } from "react";
+import {Routes, Route} from "react-router-dom";
+import HomePage from "./Pages/HomePage";
+import Productpage from "./Pages/ProductPage";
 
+import "./App.css";
 const App = () => {
+  const [collectionForProductPage, setCollectionFromProductPage] = useState([]);
+
+  const onGalleryCardClicked = (collection) => {
+    setCollectionFromProductPage(collection);
+  }
+
   return (
-    <GalleryCard />
+    <>
+      <Routes>
+        <Route path="/" element={<HomePage onGalleryCardClicked={onGalleryCardClicked} />} />
+        <Route path="/product/:type" element={<Productpage collection={collectionForProductPage} />} />
+      </Routes>
+    </>
   );
 }
 

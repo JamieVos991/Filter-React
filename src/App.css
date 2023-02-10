@@ -14,10 +14,16 @@ body {
   font-family: sans-serif;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 #root {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   flex-wrap: wrap;
+  gap: 4rem;
+  padding-bottom: 4rem;
 }

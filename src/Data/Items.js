@@ -14,9 +14,17 @@ import Cola_5 from "../Img/Cola_5.jpeg";
 import Cola_6 from "../Img/Cola_6.webp";
 import Cola_7 from "../Img/Cola_7.jpeg";
 
-const items = {
+import Fanta_1 from "../Img/Fanta_1.avif";
+import Fanta_2 from "../Img/Fanta_2.avif";
+import Fanta_3 from "../Img/Fanta_3.avif";
+import Fanta_4 from "../Img/Fanta_4.avif";
+import Fanta_5 from "../Img/Fanta_5.avif";
+import Fanta_6 from "../Img/Fanta_6.avif";
+import Fanta_7 from "../Img/Fanta_7.avif";
 
-    bacardi: [
+const items = [
+
+    [
         {
             name: "Default Bacardi 1",
             description: "Lorem Ipsum",
@@ -61,50 +69,95 @@ const items = {
         },
     ],
 
-    cola: [
+    [
+            {
+                name: "Default Cola 1",
+                description: "Lorem Ipsum",
+                image: Cola_1,
+                alt: "Default alt"
+            },
+            {
+                name: "Default Cola 2",
+                description: "Lorem Ipsum",
+                image: Cola_2,
+                alt: "Default alt"
+            },
+            {
+                name: "Default Cola 3",
+                description: "Lorem Ipsum",
+                image: Cola_3,
+                alt: "Default alt"
+            },
+            {
+                name: "Default Cola 4",
+                description: "Lorem Ipsum",
+                image: Cola_4,
+                alt: "Default alt"
+            },
+            {
+                name: "Default Cola 5",
+                description: "Lorem Ipsum",
+                image: Cola_5,
+                alt: "Default alt"
+            },
+            {
+                name: "Default Cola 6",
+                description: "Lorem Ipsum",
+                image: Cola_6,
+                alt: "Default alt"
+            },
+            {
+                name: "Default Cola 7",
+                description: "Lorem Ipsum",
+                image: Cola_7,
+                alt: "Default alt"
+            },
+    ],
+
+    [
         {
-            name: "Default Cola 1",
+            name: "Default Fanta 1",
             description: "Lorem Ipsum",
-            image: Cola_1,
+            image: Fanta_1,
             alt: "Default alt"
         },
         {
-            name: "Default Cola 2",
+            name: "Default Fanta 2",
             description: "Lorem Ipsum",
-            image: Cola_2,
+            image: Fanta_2,
             alt: "Default alt"
         },
         {
-            name: "Default Cola 3",
+            name: "Default Fanta 3",
             description: "Lorem Ipsum",
-            image: Cola_3,
+            image: Fanta_3,
             alt: "Default alt"
         },
         {
-            name: "Default Cola 4",
+            name: "Default Fanta 4",
             description: "Lorem Ipsum",
-            image: Cola_4,
+            image: Fanta_4,
             alt: "Default alt"
         },
         {
-            name: "Default Cola 5",
+            name: "Default Fanta 5",
             description: "Lorem Ipsum",
-            image: Cola_5,
+            image: Fanta_5,
             alt: "Default alt"
         },
         {
-            name: "Default Cola 6",
+            name: "Default Fanta 6",
             description: "Lorem Ipsum",
-            image: Cola_6,
+            image: Fanta_6,
             alt: "Default alt"
         },
         {
-            name: "Default Cola 7",
+            name: "Default Fanta 7",
             description: "Lorem Ipsum",
-            image: Cola_7,
+            image: Fanta_7,
             alt: "Default alt"
         },
-    ]
-}
+    ],
+]
 
 export default items
